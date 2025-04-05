@@ -1,0 +1,12 @@
+# Игнорировать всё лишнее
+*.log
+*.tmp
+*.bak
+*.swp
+*.pid
+*.jar
+.env
+world/
+logs/
+eula.txt
+server.properties
