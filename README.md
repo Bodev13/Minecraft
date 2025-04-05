@@ -5,17 +5,16 @@
 - [Quickstart](#quickstart)
 - [Usage](#usage)
 
+## Description
+
+This project sets up a Dockerized Minecraft server using `docker-compose`. It enables easy deployment, configuration, and persistence for a Minecraft Java Edition server.
+
 ### Prerequisites
 
 - Docker & Docker Compose installed
 - Minecraft server JAR file in the root directory, named `minecraft-server.jar`
 
-## Description
-
-This project sets up a Dockerized Minecraft server using `docker-compose`. It enables easy deployment, configuration, and persistence for a Minecraft Java Edition server.
-
 ## Quickstart
-
 
 
 ## Usage
@@ -31,6 +30,3 @@ docker-compose up --build
 
 ### Access the server at:
 
-```bash
-your-cloud-ip:8888
-```
