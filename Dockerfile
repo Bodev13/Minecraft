@@ -10,13 +10,10 @@ COPY minecraft-server.jar .
 COPY eula.txt .
 
 
-ENV APLICATION_PORT=${APLICATION_PORT}
+ENV APPLICATION_PORT=25565
 
 # EXPOSE the port
-EXPOSE ${APLICATION_PORT}
-
-# Checking for eula.txt and accepting the terms
-RUN if [ ! -f /app/eula.txt ]; then echo "eula=true" > /app/eula.txt; fi
+EXPOSE ${APPLICATION_PORT}
 
 # Run minecraft-sever
 ENTRYPOINT ["java", "-Xmx1024M", "-Xms1024M", "-jar", "minecraft-server.jar", "nogui"]
