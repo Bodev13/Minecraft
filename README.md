@@ -23,7 +23,7 @@ This project sets up a Dockerized Minecraft server using `docker-compose`. It en
 ```bash
 git clone https://github.com/Bodev13/Minecraft
 ````
-2. Create and setup the .env file
+2. Create and set up the .env file
 
 3. Build and start the Minecraft server container:
 ```bash
