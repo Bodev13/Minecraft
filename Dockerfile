@@ -1,7 +1,7 @@
 FROM openjdk:21
 
 # Creating a directoty /app
-RUN mkdir -p /app
+#RUN mkdir -p /app
 
 WORKDIR /app
 
@@ -9,11 +9,8 @@ WORKDIR /app
 COPY minecraft-server.jar .
 COPY eula.txt .
 
-
-ENV APPLICATION_PORT=25565
-
 # EXPOSE the port
-EXPOSE ${APPLICATION_PORT}
+EXPOSE 25565
 
 # Run minecraft-sever
 ENTRYPOINT ["java", "-Xmx1024M", "-Xms1024M", "-jar", "minecraft-server.jar", "nogui"]

@@ -4,11 +4,9 @@ services:
     build: .
     platform: linux/amd64
     ports:
-      - "${PORT_OUT}:${APPLICATION_PORT}"
-    environment:
-      APPLICATION_PORT: ${APPLICATION_PORT}
+      - "8888:25565"
     volumes:
-      - local_data:/app/world
+      - local_data:/data
     restart: always
 
 volumes:
