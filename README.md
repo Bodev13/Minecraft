@@ -47,3 +47,16 @@ mcstatus localhost:8888 status
 ```bash
 your-cloud-ip:8888
 ```
+
+The game settings such as maximum number of players, difficulty, and world generation type
+are configurable via environment variables in the `.env` file.
+
+Here are some examples of the environment variables:
+
+```bash
+MAX_PLAYERS=25
+DIFFICULTY=hard
+LEVEL_TYPE=default
+ALLOW_CHEATS=true
+ALLOW_NETHER=true
+```
