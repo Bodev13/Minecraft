@@ -1,8 +1,5 @@
 FROM openjdk:21
 
-# Creating a directoty /app
-#RUN mkdir -p /app
-
 WORKDIR /app
 
 # Copy server.jar file and eula.txt
