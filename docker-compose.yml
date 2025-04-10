@@ -1,13 +1,15 @@
-version: "3.8"
 
 services:
   mc-server:
-    container_name: minecraft-server
     build: .
+    platform: linux/amd64
     ports:
-      - "${PORT_OUT}:${APLICATION_PORT}"
-    environment:
-      APLICATION_PORT: ${APLICATION_PORT}
+      - "8888:25565"
     volumes:
-      - ./data:/app/world
+      - local_data:/data
     restart: always
+    env_file:
+      - .env
+
+volumes:
+  local_data:

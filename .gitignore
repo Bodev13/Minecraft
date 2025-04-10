@@ -1,4 +1,4 @@
-# Игнорировать всё лишнее
+# Ignore all these files
 *.log
 *.tmp
 *.bak
@@ -6,7 +6,7 @@
 *.pid
 *.jar
 .env
+venv/
 world/
 logs/
-eula.txt
 server.properties
